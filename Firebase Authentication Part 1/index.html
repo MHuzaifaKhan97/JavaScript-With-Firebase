@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase Authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAdTOQkrFFFmxj3Be02XZO4OaLGzhMgeOw",
+            authDomain: "fbdb-learning.firebaseapp.com",
+            databaseURL: "https://fbdb-learning.firebaseio.com",
+            projectId: "fbdb-learning",
+            storageBucket: "fbdb-learning.appspot.com",
+            messagingSenderId: "345634943146",
+            appId: "1:345634943146:web:8ca72d38e32436c612e0d3",
+            measurementId: "G-5K4EHD6S0M"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div class="form">
+        <h1>Sign Up</h1>
+        <input type="email" name="email" id="email" placeholder="Enter Email..."> <br>
+        <input type="password" name="password" id="password" placeholder="Enter Password..." > <br>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+    
+    <div class="form">
+        <h1>Log In</h1>
+        <input type="email" name="email" id="signInEmail" placeholder="Enter Email..."> <br>
+        <input type="password" name="password" id="signInPassword" placeholder="Enter Password..." > <br>
+        <button onclick="logIn()">Sign Up</button>
+    </div>
+    <script src='./app.js'></script>
+</body>
+
+</html>
