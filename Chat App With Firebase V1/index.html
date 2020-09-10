@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat App</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/bootstrap.css'>
+    <!-- Added Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyATJ9-QGV-fOAa6MgJzetOJ8uufrimT8RA",
+            authDomain: "chat-roomapp.firebaseapp.com",
+            databaseURL: "https://chat-roomapp.firebaseio.com",
+            projectId: "chat-roomapp",
+            storageBucket: "chat-roomapp.appspot.com",
+            messagingSenderId: "397431496402",
+            appId: "1:397431496402:web:fb68e42b3dcb13e711570b",
+            measurementId: "G-3XKLHVE0SM"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="chat-box">
+                    <h1 class="text-uppercase p-2"> <i class="fa fa-envelope"></i> Chat App</h1>
+                    <hr>
+                    <ul id="messages">
+
+                    </ul>
+                    <div class="d-flex input-side">
+                        <input type="text" name="message" id="message" placeholder="Enter Message.."
+                            class="form-control" />
+                        <button class="btn btn-warning" onclick="sendMessage()"> <i class="fa fa-location-arrow"></i> Send </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='./app.js'></script>
+</body>
+
+</html>
