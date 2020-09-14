@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logged IN</title>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAdTOQkrFFFmxj3Be02XZO4OaLGzhMgeOw",
+            authDomain: "fbdb-learning.firebaseapp.com",
+            databaseURL: "https://fbdb-learning.firebaseio.com",
+            projectId: "fbdb-learning",
+            storageBucket: "fbdb-learning.appspot.com",
+            messagingSenderId: "345634943146",
+            appId: "1:345634943146:web:8ca72d38e32436c612e0d3",
+            measurementId: "G-5K4EHD6S0M"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <button onclick="facebookLogOut()" >Log Out</button>
+    <script src='./app.js'></script>
+</body>
+</html>
